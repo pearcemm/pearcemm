@@ -1,0 +1,78 @@
+/* Variables */
+:root {
+    --background-color: #f5f5f5;
+    --content-bg-color: #ffffff;
+    --text-color: #555; /* Slightly lighter body text color */
+    --accent-color: #444; /* Darker starting color for navigation */
+    --nav-border-color: #e0e0e0;
+}
+
+/* Global Styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200; /* Lighter font weight */
+    font-size: 15px; /* Reduced font size */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: var(--content-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--nav-border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    font-weight: 300;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--text-color); /* Lighter color on hover */
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-size: 1.3rem; /* Set both h1 and h2 to the same size */
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    font-size: 0.95rem; /* Reduced font size */
+    margin-bottom: 1rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
