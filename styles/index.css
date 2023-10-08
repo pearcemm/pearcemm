@@ -1,0 +1,44 @@
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--nav-border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    font-weight: 300;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+/* Typography Details */
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
