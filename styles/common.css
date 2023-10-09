@@ -23,7 +23,7 @@ body {
     max-width: 600px;
     background-color: var(--content-bg-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    padding: .5rem;
     text-align: center;
 }
 
@@ -32,4 +32,19 @@ h1 {
     font-weight: 400;
     font-size: 1.3rem;
     margin-bottom: 2rem;
+}
+
+.banner-container {
+    width: 100%;               /* Ensures the container takes the full width of its parent */
+    overflow: hidden;          /* Prevents any spillover from the image if it's too large */
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#bannerImage {
+    max-height: 100px;  /* Adjust this to a value that shows your image without too much cropping */
+    width: auto;        /* Let the width adjust automatically based on height */
+    height: auto;       /* Allows image to maintain its aspect ratio */
+    object-fit: contain; /* Image will scale to fit within its box, without cropping */
+    margin: 0 auto; 
 }
