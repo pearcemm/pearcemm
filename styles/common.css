@@ -25,6 +25,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: .5rem;
     text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 h1 {
@@ -39,10 +41,11 @@ h1 {
     overflow: hidden;          /* Prevents any spillover from the image if it's too large */
     text-align: center;
     padding-top: 2rem;
+    margin-bottom: 0rem;
 }
 
 #bannerImage {
-    max-height: 100px;  /* Adjust this to a value that shows your image without too much cropping */
+    max-height: 9rem;  /* Adjust this to a value that shows your image without too much cropping */
     width: auto;        /* Let the width adjust automatically based on height */
     height: auto;       /* Allows image to maintain its aspect ratio */
     object-fit: contain; /* Image will scale to fit within its box, without cropping */
